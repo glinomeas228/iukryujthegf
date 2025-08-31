@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "blockwalker",
+  "version": "1.0.0",
+  "name": "Block Walker",
+  "description": "Client-side Fabric mod: scans a fixed cube and walks to all non-air blocks (no breaking/placing). Trigger with chat message '.start'.",
+  "authors": [
+    "generated-by-assistant"
+  ],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.example.blockwalker.BlockWalkerMod"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.14.0",
+    "fabric": "*"
+  }
+}

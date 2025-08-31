@@ -1,0 +1,29 @@
+// Minimal Gradle setup for a Fabric client mod.
+plugins {
+    id 'fabric-loom' version '1.2.8'
+    id 'java'
+}
+
+group = 'com.example'
+version = '1.0.0'
+sourceCompatibility = '17'
+
+repositories {
+    mavenCentral()
+    maven { url = 'https://maven.fabricmc.net/' }
+}
+
+dependencies {
+    minecraft "com.mojang:minecraft:1.20.2"
+    mappings "net.fabricmc:yarn:1.20.2+build.11:v2"
+    modImplementation "net.fabricmc:fabric-loader:0.14.9"
+    modImplementation "net.fabricmc.fabric-api:fabric-api:0.88.0+1.20.2"
+}
+
+loom {
+    silentMojangMappingsLicense = true
+}
+
+jar {
+    from('LICENSE')
+}
